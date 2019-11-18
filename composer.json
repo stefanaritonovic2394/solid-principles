@@ -1,0 +1,19 @@
+{
+    "name": "stefa/php-solid",
+    "authors": [
+        {
+            "name": "stefanaritonovic2394",
+            "email": "stefanaritonovic@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "SRP\\": "src/SRP",
+            "OCP\\": "src/OCP",
+            "LSP\\": "src/LSP",
+            "ISP\\": "src/ISP",
+            "DIP\\": "src/DIP"
+        }
+    }
+}
