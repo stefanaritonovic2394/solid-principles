@@ -4,12 +4,12 @@
 
     class FutureCar implements CarInterface, AirplaneInterface
     {
-        public function drive()
+        public function drive(): string
         {
             return "Driving a future car";
         }
 
-        public function fly()
+        public function fly(): string
         {
             return "Flying a future car";
         }

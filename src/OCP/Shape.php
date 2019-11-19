@@ -3,5 +3,5 @@
     namespace OCP;
 
     interface Shape {
-        public function area();
+        public function area(): int;
     }

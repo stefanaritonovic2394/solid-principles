@@ -4,8 +4,8 @@
 
     class AudiobookDelivery extends OnlineDelivery
     {
-        public function getSoftwareOptions()
+        public function getSoftwareOptions(): array
         {
-            
+            return [];
         }
     }

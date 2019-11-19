@@ -7,14 +7,19 @@
         private $title;
         private $userId;
 
-        public function __construct($title, $userId)
+        public function __construct(string $title, int $userId)
         {
             $this->title = $title;
             $this->userId = $userId;
         }
 
-        public function getTitle() 
+        public function getTitle(): string
         {
             return $this->title;
+        }
+
+        public function getUserId(): int
+        {
+            return $this->userId;
         }
     }

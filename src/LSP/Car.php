@@ -4,7 +4,7 @@
 
     class Car extends VehiclesWithEngine
     {
-        public function startEngine()
+        public function startEngine(): string
         {
             return $this->getName() . " engine started...";
         }

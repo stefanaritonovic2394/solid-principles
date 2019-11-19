@@ -9,7 +9,7 @@
         //     throw new Exception('Not implemented method');
         // }
 
-        public function fly()
+        public function fly(): string
         {
             return "Flying an airplane";
         }

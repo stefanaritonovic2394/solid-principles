@@ -6,12 +6,12 @@
         private $width;
         private $height;
 
-        public function __construct($width, $height) {
+        public function __construct(int $width, int $height) {
             $this->width = $width;
             $this->height = $height;
         }
 
-        public function area() {
+        public function area(): int {
             return $this->width * $this->height;
         }
     }

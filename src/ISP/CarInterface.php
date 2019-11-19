@@ -3,5 +3,5 @@
     namespace ISP;
 
     interface CarInterface {
-        public function drive();
+        public function drive(): string;
     }

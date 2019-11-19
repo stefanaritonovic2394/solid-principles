@@ -1,5 +1,6 @@
 <?php
 
+    declare(strict_types = 1);
     require 'vendor/autoload.php';
 
     use SRP\User;
@@ -13,21 +14,21 @@
     use LSP\HardcoverDelivery;
 
     use LSP\TrasportationVehicle;
-    use LSP\Car;
+    //use LSP\Car;
     use LSP\Bicycle;
 
-    //use ISP\Car;
+    use ISP\Car;
     use ISP\FutureCar;
 
     use DIP\MessageSender;
     use DIP\SmtpMailer;
 
     /******** Single Responsibility ********/
-    //$user = new User('stefan', 'stefan@gmail.com');
-    //$db = new DB;
-    //$db->store($user);
-    //echo "<strong>Name: </strong>" . $user->getName() . "<br>";
-    //echo "<strong>Email: </strong>" . $user->getEmail();
+    // $user = new User('stefan', 'stefan@gmail.com');
+    // $db = new DB;
+    // $db->store($user);
+    // echo "<strong>Name: </strong>" . $user->getName() . "<br>";
+    // echo "<strong>Email: </strong>" . $user->getEmail();
 
     /******** Open-Close ********/
     // $rectangle = [
@@ -45,10 +46,10 @@
     /******** Liskov Substitution ********/
     // $hardDel = new HardcoverDelivery('Book1', 1);
     // echo $hardDel->getDeliveryLocations();
-    $transport = new TrasportationVehicle('Audi', 200);
-    $car = new Car('Renault', 150);
-    $bicycle = new Bicycle('BMX', 50);
-    echo $bicycle->startMoving();
+    // $transport = new TrasportationVehicle('Audi', 200);
+    // $car = new Car('Renault', 150);
+    // $bicycle = new Bicycle('BMX', 50);
+    // echo $car->startEngine();
 
     /******** Interface Segregation ********/
     // $car = new Car;
@@ -57,6 +58,6 @@
     // echo $futureCar->fly();
 
     /******** Dependency Inversion ********/
-    // $smtp = new SmtpMailer;
-    // $messageSender = new MessageSender($smtp);
-    // echo $smtp->send();
+    $smtp = new SmtpMailer;
+    $messageSender = new MessageSender($smtp);
+    echo $smtp->send();

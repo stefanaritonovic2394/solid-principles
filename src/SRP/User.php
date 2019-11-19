@@ -6,18 +6,18 @@
         private $name;
         private $email;
 
-        public function __construct($name, $email)
+        public function __construct(string $name, string $email)
         {
             $this->name = $name;
             $this->email = $email;
         }
 
-        public function getName()
+        public function getName(): string
         {
             return $this->name;
         }
 
-        public function getEmail()
+        public function getEmail(): string
         {
             return $this->email;
         }

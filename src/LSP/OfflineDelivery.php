@@ -4,8 +4,8 @@
 
     class OfflineDelivery extends BookDelivery
     {
-        public function getDeliveryLocations() 
+        public function getDeliveryLocations(): string
         {
-            
+            return "Delivery locations";
         }
     }

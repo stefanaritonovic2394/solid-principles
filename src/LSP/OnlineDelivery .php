@@ -4,7 +4,7 @@
 
     class OnlineDelivery extends BookDelivery
     {
-        public function getSoftwareOptions()
+        public function getSoftwareOptions(): array
         {
             $audioFormat = ['mp3'];
             return $audioFormat;

@@ -3,5 +3,5 @@
     namespace DIP;
 
     interface MailerInterface {
-        public function send();
+        public function send(): string;
     }

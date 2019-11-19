@@ -4,7 +4,7 @@
 
     class SmtpMailer implements MailerInterface
     {
-        public function send()
+        public function send(): string
         {
             return "Sending email using SMTP";
         }

@@ -4,7 +4,7 @@
 
     class Car implements CarInterface
     {
-        public function drive()
+        public function drive(): string
         {
             return "Driving a car";
         }

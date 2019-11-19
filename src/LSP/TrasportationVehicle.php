@@ -7,23 +7,23 @@
         private $name;
         private $speed;
 
-        public function __construct($name, $speed)
+        public function __construct(string $name, int $speed)
         {
             $this->name = $name;
             $this->speed = $speed;
         }
 
-        public function getName() 
+        public function getName(): string
         {
             return $this->name;
         }
 
-        public function getSpeed() 
+        public function getSpeed(): int
         {
             return $this->speed;
         }
 
-        public function startEngine()
+        public function startEngine(): string
         {
             return "";
         }

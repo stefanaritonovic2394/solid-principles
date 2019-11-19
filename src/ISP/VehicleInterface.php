@@ -3,6 +3,6 @@
     namespace ISP;
 
     interface VehicleInterface {
-        public function drive();
-        public function fly();
+        public function drive(): string;
+        public function fly(): string;
     }

@@ -4,7 +4,7 @@
 
     class VehiclesWithEngine extends TrasportationVehicle
     {
-        public function startEngine()
+        public function startEngine(): string
         {
             return "Engine started...";
         }

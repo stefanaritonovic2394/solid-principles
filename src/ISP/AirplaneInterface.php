@@ -3,5 +3,5 @@
     namespace ISP;
 
     interface AirplaneInterface {
-        public function fly();
+        public function fly(): string;
     }
